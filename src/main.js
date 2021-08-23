@@ -33,7 +33,7 @@ function onButtonClick(event, items){
     const key = dataset.key;
     const value = dataset.value;
 
-    //해당하지 않는 경우에는 함수를 끝냄 
+    //해당하지 않는 경우에는 함수를 끝낸다.
     if (key == null || value == null){
         return; 
     }
