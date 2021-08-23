@@ -7,8 +7,14 @@ function loadItems(){
 }
 
 //Update the list with the given items
+// 줄 아이템들의 값을 update 하는 함수 displayItems 
 function displayItems(items){
+
+    //.querySelector() 는 CSS 선택자로 요소를 선택하게 해준다. 
     const container = document.querySelector('.items');
+    
+    //innerHTML (container에 들어간 값을 innerHTML로 변경해서 코딩한다.)
+    //그런데, 이 때 들어갈 변경값이 items.map 
     container.innerHTML = items.map(item => createHTMLString(item)).join('');
 }
 
